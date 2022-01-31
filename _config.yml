@@ -161,7 +161,7 @@ pgp: False
 # This works best when your author blurb image has a transparent background, or matches your site background color.
 
 # if the author_blurb is not set, then this feature is skipped
-author_blurb: "Although I have studied data science using with deep learning, I cannot sure that my posting is helpful to you. I just hope you to get a useful information from my posting. Thank you for visiting my blog. If you have any questions, please contact to me via email."
+author_blurb: "Although I have studied data science using with deep learning, I cannot sure that my posting is helpful to you. I just hope you get a useful information from my posting. Thank you for visiting my blog. If you have any questions, please contact me via email."
 author_blurb_image: "/img/author.png"
 
 ##################
