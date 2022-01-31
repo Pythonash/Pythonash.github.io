@@ -16,7 +16,7 @@ baseurl: /ash
 
 # Google tracking id
 
-google-tracking-id: ""
+google-tracking-id: "Pythonash"
 
 # Forces https everywhere in your website, except when you serve it locally
 # If you are not hosted on Github Pages, and your host doesn't support https
@@ -30,9 +30,9 @@ force-https: True
 
 lang: "en"
 author: "Pythonash"
-title: "Lab."
-description: "Blog and website of John Smith, blogging mainly for tech. Opinions expressed are mine."
-keywords: "smith, jones, personal, jekyll, theme"
+title: "Pythonash Lab."
+description: "My online laboratory and diary, posting mainly data science or my daily life."
+keywords: "Data Science, Machine learning, Deep learning, AI"
 favicon: "/img/favicon.ico"
 
 ################
@@ -56,8 +56,8 @@ type-speed: 10
 start-delay: 200
 delete-delay: 5000
 lines: # You can add HTML Tags in the Text
-  - text: "The lower you fall, the higher you'll fly."
-  - text: "Where’s your will to be weird?"
+  - text: "Where a movement shifting the world starts."
+  - text: "방구석 대학원생의 작은 연구소"
 
 me-img: "/img/jetpacktocat.png"
 
@@ -85,7 +85,7 @@ me-img: "/img/jetpacktocat.png"
 # Color the browser elements #
 ##############################
 color-browser: "#000000"
-apple-status-bar-style: "black"
+apple-status-bar-style: "white"
 
 ################
 # Web app mode #
