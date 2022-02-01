@@ -58,8 +58,8 @@ delete-delay: 5000
 lines: # You can add HTML Tags in the Text
   - text: "Where a movement shifting the world starts."
   - text: "방구석 대학원생의 작은 연구소"
-
-me-img: ""
+## 이부분 가운데 사진 
+# me-img: ""
 
 # To use facebook profile pic comment the previous line and uncomment the following
 # line, and replace 'user_id' with your facebook user id.
