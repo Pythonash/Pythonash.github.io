@@ -59,7 +59,7 @@ lines: # You can add HTML Tags in the Text
   - text: "Where a movement shifting the world starts."
   - text: "방구석 대학원생의 작은 연구소"
 
-me-img: "/img/jetpacktocat.png"
+# me-img: "/img/jetpacktocat.png"
 
 # To use facebook profile pic comment the previous line and uncomment the following
 # line, and replace 'user_id' with your facebook user id.
