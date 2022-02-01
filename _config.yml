@@ -33,13 +33,13 @@ author: "Pythonash"
 title: "Pythonash Lab."
 description: "My online laboratory and diary, posting mainly data science or my daily life."
 keywords: "Data Science, Machine learning, Deep learning, AI"
-favicon: "/img/favicon.ico"
+favicon: "/img/ashcat.ico"
 
 ################
 # Header layout #
 ################
 
-black-favicon: "/img/black-lab-glass.ico"
+black-favicon: "/img/ashcat.ico"
 logo: "/img/author.png" # leave blank if you don't want a logo
 
 background-img: "../img/bg_1.jpeg"
