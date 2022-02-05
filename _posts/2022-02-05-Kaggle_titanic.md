@@ -1,7 +1,7 @@
 ---
 layout: post
 section-type: post
-title: [Kaggle] Titanic survival analysis, Top 6% notebook.
+title: [캐글] 타이타닉 생존자 예측 대회 Top 6% 노트북
 category: kaggle
 tags: [ 'kaggle','deep learning','machine learning','data science','titanic' ]
 ---
