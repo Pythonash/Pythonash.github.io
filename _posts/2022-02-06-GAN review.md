@@ -186,27 +186,27 @@ gan.summary()
 
 **size**는 일종의 seed number와 같이 생각하시면 됩니다. 
 
-- 생성자 모델의 입력과 대응되는 부분인데, 얼만큼의 사이즈를 넣어줄지 결정하는 겁니다.
+> 생성자 모델의 입력과 대응되는 부분인데, 얼만큼의 사이즈를 넣어줄지 결정하는 겁니다.
 
 > 하이퍼 파라미터처럼 여러 값을 시도해보실 수 있습니다.
 
 **generator**는 생성자 모델을 구축한 겁니다.
 
-- 중간 중간 BatchNormalization을 해줬고, 전치합성곱을 쌓아줬습니다. 
+> 중간 중간 BatchNormalization을 해줬고, 전치합성곱을 쌓아줬습니다. 
 
-- 폭주를 막기위해서 드롭아웃층과 효율적인 학습을 위해 he_normal을 이용한 ReLU함수의 변종을 사용했습니다.
+> 폭주를 막기위해서 드롭아웃층과 효율적인 학습을 위해 he_normal을 이용한 ReLU함수의 변종을 사용했습니다.
 
 **discriminator**는 판별자 모델을 구축한 겁니다.
 
-- 생성자모델은 출력층에서 (32,32,3)의 차원을 갖는 데이터를 뱉어낼 겁니다. 그러면 다시 (32,32,3)의 차원을 갖는 입력층을 판별자에 쌓아줍니다.
+> 생성자모델은 출력층에서 (32,32,3)의 차원을 갖는 데이터를 뱉어낼 겁니다. 그러면 다시 (32,32,3)의 차원을 갖는 입력층을 판별자에 쌓아줍니다.
 
-- 그리고 역시 BatchNormalization과 드롭아웃을 추가하고 마지막에 이 데이터를 일렬로 펼치는 Flatten과 마지막에 진짜인지 가짜인지를 가려낼 시그모이드 활성화 유닛을 쌓아줍니다.
+> 그리고 역시 BatchNormalization과 드롭아웃을 추가하고 마지막에 이 데이터를 일렬로 펼치는 Flatten과 마지막에 진짜인지 가짜인지를 가려낼 시그모이드 활성화 유닛을 쌓아줍니다.
 
 **gan**은 생성자와 판별자 모델을 합쳐준 겁니다.
 
-- 이제 생성자가 랜덤 벡터로부터 입력을 받아서 아무 이미지나 뱉어내면, 판별자가 그 이미지를 집어삼킨후 진짜인지 가짜인지를 판별할 겁니다.
+> 이제 생성자가 랜덤 벡터로부터 입력을 받아서 아무 이미지나 뱉어내면, 판별자가 그 이미지를 집어삼킨후 진짜인지 가짜인지를 판별할 겁니다.
 
-- 그러면 그 판별자를 보고, 생성자는 더 잘 속이기 위해 점점 진짜와 같은 이미지를 만들어 낼 겁니다.
+> 그러면 그 판별자를 보고, 생성자는 더 잘 속이기 위해 점점 진짜와 같은 이미지를 만들어 낼 겁니다.
 
 [실행결과]
 
@@ -398,6 +398,6 @@ plt.imshow(generator(noise)[0])
 <a id="4"></a>
 # References
 
-- Geron, A. (2019). Hands on machine learning with scikit-learn and tensorflow 2nd.
+Geron, A. (2019). Hands on machine learning with scikit-learn and tensorflow 2nd.
 
-- Goodfellow, I., Pouget-Abadie, J., Mirza, M., Xu, B., Warde-Farley, D., Ozair, S., Courville, A., Bengio, Y. (2014). Generatvie Adversarial Nets, Advances in Neural Information Processing Systems 27 (NIPS 2014).
+Goodfellow, I., Pouget-Abadie, J., Mirza, M., Xu, B., Warde-Farley, D., Ozair, S., Courville, A., Bengio, Y. (2014). Generatvie Adversarial Nets, Advances in Neural Information Processing Systems 27 (NIPS 2014).
