@@ -58,4 +58,4 @@ tags: [ 'deep learning','machine learning','data science','paper' ]
 
 이제부터 G를 생성자(generator), D를 판별자(discriminator)라고 생각하겠습니다.
 
-또한, 
+또한, $p_g$를 
