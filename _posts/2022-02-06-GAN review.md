@@ -19,13 +19,11 @@ tags: [ 'deep learning','machine learning','data science','paper' ]
 <a id="toc"></a>
 - [1. Introduction](#1)
     - [1.1 Introduction 정리](#1.1)
-- [2. Related work](#2)
-- [3. Adversarial Nets](#3)
-- [4. Theoretical Results ](#4)
-    - [4.1 Global Otimality](#3.2)
-    - [4. Annotation Visualiation with Spacy](#4)
-- [5. Advantages and disadvantages](#5)
-- [6. References](#6)
+- [2. Adversarial Nets](#2)
+- [3. Theoretical Results ](#3)
+    - [3.1 Global Otimality](#3.1)
+- [4. Advantages and disadvantages](#4)
+- [5. References](#5)
 
 <a id="1"></a>
 # Introduction
@@ -56,8 +54,8 @@ tags: [ 'deep learning','machine learning','data science','paper' ]
 2. 이 모델은 기본적으로 **생성자**와 **판별자**가 있는데 이 두 그룹은 각각 **위조 지폐를 찍어내는 범죄자**와 **이 범죄자를 잡으려는 경찰**로 비유할 수 있다.
 
 <a id="2"></a>
-## Related work
+## Adversarial Nets
 
-기존 심층 생성적 모델의 대부분은 확률 밀도 함수에 기반한 모수적 접근에 기반합니다. 이러한 모델들은 로그 가능도(log likelihood)를 최대화 하기 위해 훈련 됩니다.
+이제부터 G를 생성자(generator), D를 판별자(discriminator)라고 생각하겠습니다.
 
--작성중-
+또한, 
