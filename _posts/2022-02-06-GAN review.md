@@ -109,8 +109,10 @@ tags: [ 'deep learning','machine learning','data science','paper' ]
 먼저 데이터셋을 불러오겠습니다. 그리고 나서 이 이미지가 어떻게 생겼는지 보겠습니다.
 <pre>
 <code>
+
 (x_train, y_train), (x_test, y_test) = tf.keras.datasets.cifar100.load_data()
 plt.imshow(x_train[0])
+
 </code>
 </pre>
 
@@ -124,8 +126,10 @@ plt.imshow(x_train[0])
 
 <pre>
 <code>
+
 df = np.concatenate([x_train, x_test])
 print(df.shape)
+
 </code>
 </pre>
 
@@ -230,8 +234,10 @@ _________________________________________________________________
 
 <pre>
 <code>
+
 image = df/255
 imgae = image * 2. -1.
+
 </code>
 </pre>
 
@@ -242,10 +248,12 @@ imgae = image * 2. -1.
 
 <pre>
 <code>
+
 batch_size = 30
 dataset = tf.data.Dataset.from_tensor_slices(image)
 dataset = dataset.shuffle(2022)
 dataset = dataset.batch(batch_size, drop_remainder = True).prefetch(1)
+
 </code>
 </pre>
 
@@ -269,8 +277,10 @@ GAN의 경우에는 기존 신경망 학습과는 다르게 두 단계에 걸쳐
 
 <pre>
 <code>
+
 discriminator.compile(loss = 'binary_crossentropy', optimizer = 'rmsprop')
 discriminator.trainable = False
+
 </code>
 </pre>
 
@@ -288,6 +298,7 @@ discriminator.trainable = False
 
 <pre>
 <code>
+
 def train_gan(gan, dataset, batch_size, codings_size, n_epochs=50):
   generator, discriminator = gan.layers
   for epoch in range(n_epochs):
@@ -305,6 +316,7 @@ def train_gan(gan, dataset, batch_size, codings_size, n_epochs=50):
       y2 = tf.constant([[1.]] * batch_size)
       discriminator.trainable = False
       gan.train_on_batch(noise, y2)
+      
 </code>
 </pre>
 
@@ -345,7 +357,9 @@ train_gan(gan, dataset, batch_size, size, n_epochs=10)
 
 <pre> 
 <code>
+
 plt.imshow(generator(noise)[0])
+
 </code>
 </pre>
 
