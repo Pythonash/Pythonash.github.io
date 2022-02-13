@@ -79,7 +79,7 @@ tags: [ 'deep learning','machine learning','data science','paper' ]
 
 그리고 다른 실시간 시스템들보다 성능도 좋습니다.
 
-이것과 관련해서 논문 저자들이 소개해 놓은 **[홈페이지] (http://pjreddie.com/yolo/)**를 들어가시면 실시간 비디오로 객체 탐지가 어떻게 이루어지고 있는지 보실 수 있습니다.
+이것과 관련해서 논문 저자들이 소개해 놓은 **[홈페이지](http://pjreddie.com/yolo/)**를 들어가시면 실시간 비디오로 객체 탐지가 어떻게 이루어지고 있는지 보실 수 있습니다.
 
 ### **2. YOLO reasons globally about the image when making predictions.**
 
@@ -131,9 +131,9 @@ x, y는 격자 셀 테두리에 **상대적인 박스의 중심을 나타내는 
 
 ### **4. 각 격자셀은 또한, class에 대한 조건부 확률을 추정한다.**
 
-![image](https://user-images.githubusercontent.com/91790368/153373379-7bcc8222-5659-473d-b62e-4a0d09c75d59.png)
+<img width="494" alt="스크린샷 2022-02-14 오전 12 06 30" src="https://user-images.githubusercontent.com/91790368/153759455-b4575508-f385-4c6c-b196-f5480204ef76.png">
 
-여기서 **Pr(Class(i)|Object)는 물체가 주어졌을때 그것이 각 클래스에 속할 확률을 나타내는 조건부 확률**인데, 본 논문에서는 **격자 셀 당 하나의 클래스 확률 집합을 추정**합니다.
+여기서 **Pr(Class(i)|Object)**는 물체가 주어졌을때 그것이 각 클래스에 속할 확률을 나타내는 조건부 확률**인데, 본 논문에서는 **격자 셀 당 하나의 클래스 확률 집합을 추정**합니다.
 
 다시 말해서, 하나의 격자 셀은 해당 물체가 어떠 어떠한 클래스들에 속할지에 대한 **하나의 확률 집합을 계산**한다는 것 입니다.
 
@@ -141,7 +141,7 @@ x, y는 격자 셀 테두리에 **상대적인 박스의 중심을 나타내는 
 
 아무튼 이 조건부 확률을 이용해서 다음과 같은 식을 만들 수 있습니다.
 
-![image](https://user-images.githubusercontent.com/91790368/153373245-cdb5bfa7-1831-4621-bce4-5a9aacf0e1b3.png)
+<img width="1039" alt="스크린샷 2022-02-14 오전 12 07 13" src="https://user-images.githubusercontent.com/91790368/153759485-98218171-af69-4545-9c66-d9a5c1a18c59.png">
 
 이 식을 통해 각각의 **바운딩 박스에서 특정 클래스에 대한 확률 정보**를 얻을 수 있습니다.
 
