@@ -822,8 +822,8 @@ YOLO나 물체 탐지 알고리즘에 대해서는 다른 블로그나 자료에
 <a id="4"></a>
 # References
 
-1. Redmon, J., Divvala, S., Girshick, R., Farhadi, A. (2016). You only look once: Unified, real-Time object detection. CVPR, 779-788.
+Redmon, J., Divvala, S., Girshick, R., Farhadi, A. (2016). You only look once: Unified, real-Time object detection. CVPR, 779-788.
 
-2. https://bkshin.tistory.com/entry/OpenCV-6-dd - 이미지에 바운딩 박스 그리는 데에 참고
+https://bkshin.tistory.com/entry/OpenCV-6-dd - 이미지에 바운딩 박스 그리는 데에 참고.
 
-3. https://lee-mandu.tistory.com/519?category=838684 - 데이터 파일 파싱하는 데에 
+https://lee-mandu.tistory.com/519?category=838684 - 데이터 파일 파싱하는 데에 참고.
